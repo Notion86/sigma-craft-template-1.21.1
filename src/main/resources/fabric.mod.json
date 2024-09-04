@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sigmacraft",
+	"version": "${version}",
+	"name": "Sigma Craft",
+	"description": "This is my first mod!",
+	"authors": [
+		"Harry!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sigmacraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.harry.sigmacraft.SigmaCraft"
+		],
+		"fabric-datagen": [
+			"net.harry.sigmacraft.SigmaCraftDataGenerator"
+		],
+		"client": [
+			"net.harry.sigmacraft.SigmaCraftClient"
+		]
+	},
+	"mixins": [
+		"sigmacraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
